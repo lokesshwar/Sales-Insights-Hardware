@@ -162,14 +162,14 @@ Measures used in all visualization are:
 
 Key Measures:
 
-Profit Margin % = DIVIDE([Total Profit Margin],[Revenue],0)
-Profit Margin Contribution % = DIVIDE([Total Profit Margin],CALCULATE([Total Profit Margin],ALL('sales products'),ALL('sales customers'),ALL('sales markets')))
-Revenue = SUM('sales transactions'[sales_amount])
-Revenue Contribution % = DIVIDE([Revenue],CALCULATE([Revenue],ALL('sales products'),ALL('sales customers'),ALL('sales markets')))
-Revenue LY = CALCULATE([Revenue],SAMEPERIODLASTYEAR('sales date'[date]))
-sales quntity = SUM('sales transactions'[sales_qty])
-Total Profit Margin = SUM('Sales transactions'[Profit_Margin])
-Profit Target:
+- Profit Margin % = DIVIDE([Total Profit Margin],[Revenue],0)
+- Profit Margin Contribution % = DIVIDE([Total Profit Margin],CALCULATE([Total Profit Margin],ALL('sales products'),ALL('sales customers'),ALL('sales markets')))
+- Revenue = SUM('sales transactions'[sales_amount])
+- Revenue Contribution % = DIVIDE([Revenue],CALCULATE([Revenue],ALL('sales products'),ALL('sales customers'),ALL('sales markets')))
+- Revenue LY = CALCULATE([Revenue],SAMEPERIODLASTYEAR('sales date'[date]))
+- sales quntity = SUM('sales transactions'[sales_qty])
+- Total Profit Margin = SUM('Sales transactions'[Profit_Margin])
+- Profit Target:
 
 Profit Target1 = GENERATESERIES(-0.05, 0.15, 0.01)
 Profit Target Value = SELECTEDVALUE('Profit Target1'[Profit Target])
